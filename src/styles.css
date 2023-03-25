@@ -116,10 +116,6 @@ p {
   color: #A1A1A1;
 }
 
-body {
-  background-color: #F7F7F7;
-}
-
 .loginComponent {
   max-width: 1500px;
   max-height: 750px;
@@ -140,6 +136,13 @@ body {
 .loginComponent .rightSide .rightSideContent {
   margin: 75px;
 }
+.loginComponent .rightSide .rightSideContent .transparentButton {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  padding: 7px 35px;
+  border-radius: 5px;
+}
 .loginComponent .rightSide::before {
   content: "";
   position: absolute;
@@ -153,12 +156,50 @@ body {
   background-size: cover;
   background-image: url("assets/images/sea-wallpaper.jpg");
 }
-.loginComponent .transparentButton {
-  background-color: transparent;
-  border: 2px solid #FFFFFF;
+.loginComponent .leftSide {
+  min-height: 750px;
+  position: relative;
+  background-color: #F7F7F7;
+}
+.loginComponent .leftSide .leftSideContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 375px;
+  padding: 25px;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+}
+.loginComponent .leftSide .leftSideContent .input-group:focus-within p {
+  color: #4A90E2;
+}
+.loginComponent .leftSide .leftSideContent .input-group:focus-within input {
+  outline: none !important;
+  border: none;
+  color: #4A90E2;
+  border-bottom: 1px solid #4A90E2;
+}
+.loginComponent .leftSide .leftSideContent .input-group input {
+  outline: none !important;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #D4D4D4;
+}
+.loginComponent .leftSide .leftSideContent .checkbox-group input[type=radio] {
+  accent-color: #4A90E2;
+}
+.loginComponent .leftSide .leftSideContent button {
+  background-color: #4A90E2;
+  border: 2px solid #4A90E2;
   text-align: center;
   padding: 7px 35px;
   border-radius: 5px;
+}
+.loginComponent .leftSide .copyrightText {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  transform: translate(-20%, -15%);
 }
 
 /*# sourceMappingURL=styles.css.map */
