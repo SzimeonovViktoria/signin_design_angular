@@ -1,2 +1,164 @@
-@import "themes/texts.scss";
-@import "themes/colors.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("src/assets/fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-BoldItalic";
+  src: url("src/assets/fonts/OpenSans-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("src/assets/fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-ExtraBoldItalic";
+  src: url("src/assets/fonts/OpenSans-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url("src/assets/fonts/OpenSans-Italic.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("src/assets/fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url("src/assets/fonts/OpenSans-LightItalic.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("src/assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("src/assets/fonts/OpenSans-Semibold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-SemiboldItalic";
+  src: url("src/assets/fonts/OpenSans-SemiboldItalic.ttf");
+}
+h1 {
+  font-family: OpenSans-Semibold, serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #757575;
+}
+
+h2 {
+  font-family: OpenSans-Semibold, serif;
+  font-size: 30px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 17px;
+  color: #757575;
+}
+
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 17px;
+  color: #A1A1A1;
+}
+
+h6 {
+  font-family: OpenSans-Semibold, serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A1A1A1;
+}
+
+.white-text {
+  font-family: OpenSans-Semibold, serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.yellow-text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 17px;
+  color: #F9C466;
+}
+
+.blue-text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  line-height: 15px;
+  color: #4A90E2;
+}
+
+.grey-text {
+  font-family: OpenSans-Semibold, serif;
+  font-size: 12px;
+  line-height: 17px;
+  color: #A1A1A1;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  line-height: 15px;
+  color: #A1A1A1;
+}
+
+body {
+  background-color: #F7F7F7;
+}
+
+.loginComponent {
+  max-width: 1500px;
+  max-height: 750px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.loginComponent .rightSide {
+  display: block;
+  padding: 0 50px;
+  overflow: auto;
+  position: relative;
+  min-height: 750px;
+}
+.loginComponent .rightSide .rightSideContent {
+  margin: 75px;
+}
+.loginComponent .rightSide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  filter: blur(7px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("assets/images/sea-wallpaper.jpg");
+}
+.loginComponent .transparentButton {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  padding: 7px 35px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
